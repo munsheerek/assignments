@@ -1,0 +1,121 @@
+<html>
+<head>
+	<style>
+
+
+	.field{
+		background-image: linear-gradient(to top,#ccddee,#ecf2f9,#ffffff);
+		width:500px;
+
+
+	}
+	h1,h3{
+		font-family: arial;
+		margin: 3px;
+		width: 200%;
+	}
+	.field input{
+		padding: 10px;
+		margin:3px;
+		border: 1px solid #cce6ff;
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: bold;
+		font-family: arial;
+	}
+	#pass,#email{
+		width: 200%;
+	}
+	select{
+		padding: 1px;
+		margin: 5px;
+		width: 60px;
+		text-align: center;
+
+		height: 30px;
+		border: 1px solid black;
+		border-radius: 5px;
+	
+	}
+	tr,td{
+		padding: 5px;
+	}
+	#para1{
+		color: blue;
+		font-size: 13px;
+	}
+	#para2{
+		color: #999999;
+		font-size: 13px;
+		width:160%
+	}
+	span{
+		color: blue;
+	}
+	#btn{
+		height: 40px;
+		width: 200px;
+		background-image:linear-gradient(to top,#528943,#5f9b4c,#64a852);
+		color: white;
+		font-family: tahoma;
+		padding: 9px;
+		font-size: 16px;
+
+	}
+	#para3{
+
+		font-weight: bold;
+		color:#999999;
+	}
+	
+
+	</style>
+	</head>
+	<body>
+		<form action="" method="get">
+			<fieldset class="field">
+			<table border="0" >
+				<tr><td><h1>Create an account</h1></td></tr>
+				<tr><td><h3>It's free and always will be.</h3></td></tr>
+				<tr>
+					<td><input type="text" id="fName" placeholder="First name"></td>
+					<td><input type="text" id="sName" placeholder="Surname"></td></tr>
+				<tr><td><input type="text" id="email" placeholder="Mobile number or email address"></td></tr>
+				<tr><td><input type="password" id="pass" placeholder="New password"></td></tr>
+				<tr><td><h3>Birthday</h3></td></tr>
+				<tr><td>
+					<select>
+						<option selected>Day</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<select>
+						<option selected>Month</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<select>
+						<option selected>Year</option>
+						<option>1991</option>
+						<option>1992</option>
+						<option>1993</option>
+					</select>
+				</td>
+				<td><p id="para1">Why do i need to provide my<br>date of birth?</p></td>
+			</tr>
+		
+			
+				<tr><td><input type="radio" value="female" name="gender"><b>Female</b>
+				<input type="radio" value="male" name="gender"><b>Male</b></td></tr>
+			<tr>
+				<td><p id="para2">By clicking Create an account, you agree to out <span>Terms</span> and confirm that you have read our <span>Data Policy,</span> including our <span>Cookie Use Policy.</span> You may recieve SMS message notifications from Facebook adn can opt our at any time.</p></td>
+			</tr>
+			<tr><td><input type="button" id="btn" value="Create an account"></td></tr>
+			<tr><td><p id="para3"><span>Create a Page</span> for a celebrity, band or business.</p></td></tr>
+			</table>
+			</fieldset>
+		</form>
+	</body>
+</html>
