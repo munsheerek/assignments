@@ -1,0 +1,20 @@
+<html>
+<head>
+	
+	<script type="text/javascript">
+		document.write("<h1>Global</h1> <br>");
+		var demo="apple";
+		document.write(demo+ " inside function <br>");
+		document.write(demo+ " outside function <br>");
+		function local()
+		{
+			document.write("<h1>Local</h1> <br>");
+			document.write(demo+" inside function");
+		}
+		local();
+	</script>
+	</head>
+	<body>
+
+	</body>
+</html>
