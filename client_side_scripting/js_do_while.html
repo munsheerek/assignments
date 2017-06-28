@@ -1,22 +1,18 @@
 <html>
 <head>
 	<script>
-		var n=10;
+		var num=10;
 		do{
-			var m=setInterval(timer,300);
+			
+			
+				var m=setInterval(timer,300);
 			function timer(){
-				document.write(n+" ");
+				document.write(num+" ");
 
-				if(n==0)
-				{
-					clearInterval(m);
-					alert("Time expired");
-				}
 				
-				
-				n--;
+				num--;
 			}
-		}while(count>=0)
+		}while(num>0)
 		
 			
 		
