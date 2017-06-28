@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script>
+		var midhun=new Array(99,93,50);
+		var arun=new Array(96,83,50);
+		var totM,totA=0;
+		totM=midhun[0]+midhun[1]+midhun[2];
+		totA=arun[0]+arun[1]+arun[2];
+		document.write("marks of Arun is "+arun+"<br>");
+		document.write("total is "+totA+".<br>");
+		document.write("marks of Midhun is "+midhun+"<br>");
+		document.write("total is "+totM);
+		if(totA>totM)
+		{
+			var diff=totA-totM;
+			alert("Arun has got "+diff+" marks more than Midhun");
+		}
+		else{
+			var diff=totM-totA;
+			alert("Midhun has got "+diff+" marks more than Arun");	
+		}
+	</script>
+	</head>
+	<body>
+
+	</body>
+</html>
