@@ -1,121 +1,153 @@
+
 <html>
-<head>
-	<style>
+<head><title>MyPage</title>
 
+<!--<script src="js/jquery-3.2.1.js"></script>
+<script src="js/scriptfb.js"></script>-->
+<style>
+#body{
+background-image: linear-gradient(to top,#dfe3ee,white);
+width:400px;
+height: 110%;
+padding: 20px;
+/*border:1px red solid;*/
+margin-top:-48px;
 
-	.field{
-		background-image: linear-gradient(to top,#ccddee,#ecf2f9,#ffffff);
-		width:500px;
+}
+#heading
+{
+font-family: arial;
+font-size: 40px;
+color: #333333;
 
+}
+.fb_login
+{
+  border: 1px solid #bdc7d8;
+  border-radius: 6px;
+  width: 98.8%;
+  height: 6%;
+  padding: 10px;
+  color: #999999;
+  font-size: 16px;
+  font-family: arial;
+}
+#fb_login
+{
+  border: 1px solid #bdc7d8;
+  border-radius: 6px;
+  width: 49%;
+  height: 6%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: arial;
+  color: #999999;
+}
+#para
+{
+font-size: 20px;
+font-family: arial;
+}
+.box{
+  padding: 2px;
+  height: 30px;
+  border: 1px solid #bdc7d8;
+  border-radius: 8px;
+}
 
-	}
-	h1,h3{
-		font-family: arial;
-		margin: 3px;
-		width: 200%;
-	}
-	.field input{
-		padding: 10px;
-		margin:3px;
-		border: 1px solid #cce6ff;
-		border-radius: 5px;
-		font-size: 18px;
-		font-weight: bold;
-		font-family: arial;
-	}
-	#pass,#email{
-		width: 200%;
-	}
-	select{
-		padding: 1px;
-		margin: 5px;
-		width: 60px;
-		text-align: center;
+#why{
+  margin-top:-30px;
+  margin-left:190px;
+  color: #365899;
+  font-family: tahoma;
+  font-size: 12px;
+}
+#info{
+  font-size: 11px;
+  font-family: arial;
+  color:#77777a;
+  margin-top: -8px;
+}
+#info a{
+  text-decoration: none;
+}
+.create_button{
 
-		height: 30px;
-		border: 1px solid black;
-		border-radius: 5px;
-	
-	}
-	tr,td{
-		padding: 5px;
-	}
-	#para1{
-		color: blue;
-		font-size: 13px;
-	}
-	#para2{
-		color: #999999;
-		font-size: 13px;
-		width:160%
-	}
-	span{
-		color: blue;
-	}
-	#btn{
-		height: 40px;
-		width: 200px;
-		background-image:linear-gradient(to top,#528943,#5f9b4c,#64a852);
-		color: white;
-		font-family: tahoma;
-		padding: 9px;
-		font-size: 16px;
+  width: 200px;
+  padding: 8px;
+  margin-top: -5px;
+  background-image: linear-gradient(to top, #578843,#5c9448,#5f9b4c,#63a450,#64a852);
+  border:2px solid #578943;
+  border-radius:6px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+#foot{
+  font-size: 12px;
+  font-family: tahoma;
+  font-weight: bold;
+  color: #365899;
+  margin-top: 35px;
 
-	}
-	#para3{
+}
+#foot a{
+  text-decoration: none;
 
-		font-weight: bold;
-		color:#999999;
-	}
-	
+}
 
-	</style>
-	</head>
-	<body>
-		<form action="" method="get">
-			<fieldset class="field">
-			<table border="0" >
-				<tr><td><h1>Create an account</h1></td></tr>
-				<tr><td><h3>It's free and always will be.</h3></td></tr>
-				<tr>
-					<td><input type="text" id="fName" placeholder="First name"></td>
-					<td><input type="text" id="sName" placeholder="Surname"></td></tr>
-				<tr><td><input type="text" id="email" placeholder="Mobile number or email address"></td></tr>
-				<tr><td><input type="password" id="pass" placeholder="New password"></td></tr>
-				<tr><td><h3>Birthday</h3></td></tr>
-				<tr><td>
-					<select>
-						<option selected>Day</option>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select>
-						<option selected>Month</option>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select>
-						<option selected>Year</option>
-						<option>1991</option>
-						<option>1992</option>
-						<option>1993</option>
-					</select>
-				</td>
-				<td><p id="para1">Why do i need to provide my<br>date of birth?</p></td>
-			</tr>
-		
-			
-				<tr><td><input type="radio" value="female" name="gender"><b>Female</b>
-				<input type="radio" value="male" name="gender"><b>Male</b></td></tr>
-			<tr>
-				<td><p id="para2">By clicking Create an account, you agree to out <span>Terms</span> and confirm that you have read our <span>Data Policy,</span> including our <span>Cookie Use Policy.</span> You may recieve SMS message notifications from Facebook adn can opt our at any time.</p></td>
-			</tr>
-			<tr><td><input type="button" id="btn" value="Create an account"></td></tr>
-			<tr><td><p id="para3"><span>Create a Page</span> for a celebrity, band or business.</p></td></tr>
-			</table>
-			</fieldset>
-		</form>
-	</body>
+</style>
+
+</head>
+
+<body>
+<div id="body">
+  <h1 id="heading"><b>Create an account</b></h1>
+  <p id="para"> it's free and always will be</p>
+  <form name="fb_login" action="" method="get">
+    <input type="text" placeholder="First Name" id="fb_login">
+    <input type="text" placeholder="Last Name" id="fb_login"><br/><br />
+    <input type="text" placeholder="Mobile number or email address" class="fb_login" ><br/><br/>
+    <input type="text" placeholder="New password" class="fb_login">
+    <p id="para">Birthday</p>
+    <select class="box">
+      <option selected><b>Day</b></option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+    </select>
+    <select class="box">
+      <option selected><b>Month</b></option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+    </select>
+    <select class="box">
+      <option selected><b>Year</b></option>
+      <option value="01">1990</option>
+      <option value="02">1992</option>
+      <option value="03">1993</option>
+      <option value="04">1994</option>
+      <option value="05">1995</option>
+      <option value="06">1996</option>
+      <option value="07">1997</option>
+    </select>
+    <div id="why">Why do i need to provide my<br/> date of birth</div><br/>
+     <input type="radio" name="gender" value="male"><font size="4px" face="arial"> Female</font>
+
+       <input type="radio" name="gender" value="female"><font size="4px" face="arial">Male</font><br/><br />
+       <p id="info">By clicking Create an account, you agree to our <a href="#">Terms</a> and <br> confirm that you have read our <a href="#">Data Policy,</a> including our <br> <a href="#">cookie Use Policy.</a> You may recieve SMS message notifications <br> from Facebook and can opt out at any time.</p>
+        <br/><input type="button" class="create_button" value="Create an account">
+  </form>
+  <p id="foot"><a href="#">Create a Page</a> for a celebrity, band or business</p>
+</body>
 </html>
