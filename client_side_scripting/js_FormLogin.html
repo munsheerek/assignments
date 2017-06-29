@@ -1,0 +1,23 @@
+<html> 
+<head> 
+    <script>
+   		
+   		function login(){
+   			var name1=document.getElementById("name").value;
+   			var pass1=document.getElementById("password").value;
+	   			if(name1=="admin"&&pass1=="admin123"){
+	   				document.write("Login Successfull");
+	   			}else{
+	   				document.write("Invalid Credentials");
+	   			}
+   		}
+	</script>
+	</head>
+	<body>
+			<form action="" method="GET">
+				Username : <input type="text" id="name">
+				Password : <input type="password" id="password">
+				<input type="button" value="Login" id="btn" onclick="login();">
+			</form> 
+	</body>
+</html>
