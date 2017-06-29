@@ -1,0 +1,25 @@
+<html> 
+<head> 
+    <script>
+    var im="f";
+             function change(){
+             	if(im=="f"){
+             	document.getElementById("pic").src="images/bg2.jpeg";
+             	im="t";
+             }else{
+             	document.getElementById("pic").src="images/bg1.jpeg";
+             	im="f";
+             }
+
+             }
+             
+            var i= setInterval("change()",500);
+             
+
+             	
+	</script>
+	</head>
+	<body>
+		<img src="images/bg1.jpeg" onclick="(clearInterval(i))"width="250px" height="200px" id="pic">
+	</body>
+</html>
