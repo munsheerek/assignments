@@ -1,0 +1,24 @@
+<html> 
+<head> 
+    <script>
+   		
+   		function display(){
+   			var name1=document.getElementById("Fname");
+	   		var name2=document.getElementById("Lname");
+	   		var mail=document.getElementById("email");
+	   		var parag=document.getElementById("para");
+	   			parag.innerHTML = "welcome " +name1.value+" "+name2.value+"."+"My Email Id is "+mail.value;
+   		}
+	</script>
+	</head>
+	<body>
+			<form>
+				First Name : <input type="text" id="Fname"><br><br>
+				Last Name : <input type="text" id="Lname"><br><br>
+				Email Id : <input type="text" id="email"><br><br>
+				Password : <input type="password" id="pass"><br><br>
+				<input type="button" value="SignUp" id="btn" onclick="display();"><br><br>
+				<p id="para"></p>
+			</form> 
+	</body>
+</html>
