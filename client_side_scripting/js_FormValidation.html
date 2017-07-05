@@ -14,15 +14,28 @@
 	   			if(name1==""){
 	   				var lblName=document.getElementById("lblName");
 	   				lblName.innerHTML="Enter your name";
-	   			}else if(addr==""){
+	   			}
+	   			if(addr==""){
 	   				var lblAddress=document.getElementById("lblAddress");
 	   				lblAddress.innerHTML="Enter your address";
-	   			}else if(mail=""){
+	   			}
+	   			if(mail==""){
 	   				var lblEmail=document.getElementById("lblEmail");
 	   				lblEmail.innerHTML="Enter a valid email";
-	   			}else if(mob=""){
+	   			}
+	   			if(mob==""){
 	   				var lblmob=document.getElementById("lblmob");
 	   				lblmob.innerHTML="Enter your mobile";
+	   			}
+	   			if(pass1=="")
+	   			{
+	   				var lblpass=document.getElementById("lblpass");
+	   				lblpass.innerHTML="Enter your Password";
+	   			}
+	   			if(pass2=="")
+	   			{
+	   				var lblcnfrm=document.getElementById("lblcnfrm");
+	   				lblcnfrm.innerHTML="Re-enter your Password";
 	   			}
    		}
 	</script>
@@ -38,7 +51,6 @@
 		}
 		#btn{
 			padding: 5px;
-			width: 50px;
 
 		}
 	
@@ -56,7 +68,7 @@
 				Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="password" class="input"><label for="password" id="lblpass"></label><br><br>
 				Confirm Password <input type="password" id="confirmpass" class="input"><label for="confirmpass" id="lblcnfrm"></label><br><br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="button" align="right" value="Login" id="btn" onclick="login();">
+				<input type="button" align="right" value="Submit Form" id="btn" onclick="login();">
 			</form> 
 	</body>
 </html>
