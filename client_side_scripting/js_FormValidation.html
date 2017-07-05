@@ -1,0 +1,62 @@
+<html> 
+<head> 
+    <script>
+   		
+   		function login(){
+   			var name1=document.getElementById("name").value;
+   			var addr=document.getElementById("address").value;
+   			var mail=document.getElementById("email").value;
+   			var mob=document.getElementById("mobile").value;
+   			var pass1=document.getElementById("password").value;
+   			var pass2=document.getElementById("confirmpass").value;
+   			
+
+	   			if(name1==""){
+	   				var lblName=document.getElementById("lblName");
+	   				lblName.innerHTML="Enter your name";
+	   			}else if(addr==""){
+	   				var lblAddress=document.getElementById("lblAddress");
+	   				lblAddress.innerHTML="Enter your address";
+	   			}else if(mail=""){
+	   				var lblEmail=document.getElementById("lblEmail");
+	   				lblEmail.innerHTML="Enter a valid email";
+	   			}else if(mob=""){
+	   				var lblmob=document.getElementById("lblmob");
+	   				lblmob.innerHTML="Enter your mobile";
+	   			}
+   		}
+	</script>
+	<style>
+		label{
+			color: red;
+		}
+		form{
+			width: 50%;
+			padding: 30px;
+			background-color: lightblue;
+		
+		}
+		#btn{
+			padding: 5px;
+			width: 50px;
+
+		}
+	
+	</style>
+	</head>
+	<body>
+			<form action="" method="GET">
+				Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name" class="input">
+				<label for="name" id="lblName"></label><br><br>
+				Personal Address <input type="text" id="address" class="input">
+				<label for="address" id="lblAddress"></label><br><br>
+				Email Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email" class="input">
+				<label for="email" id="lblEmail"></label><br><br>
+				Mobile Number &nbsp;&nbsp;<input type="text" id="mobile" class="input"><label for="mobile" id="lblmob"></label><br><br>
+				Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="password" class="input"><label for="password" id="lblpass"></label><br><br>
+				Confirm Password <input type="password" id="confirmpass" class="input"><label for="confirmpass" id="lblcnfrm"></label><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" align="right" value="Login" id="btn" onclick="login();">
+			</form> 
+	</body>
+</html>
