@@ -1,0 +1,218 @@
+<html>
+<head>
+	<title>Facebook</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		
+		}
+		.header{
+			width:100%;
+			height: 100px;
+			background-color:#3b5998;
+		}
+		.logo{
+			width:550px;
+			height: 50px;
+			margin: 30px;
+			float: left;
+		}
+		#logo_title{
+			color: #FFFFFF;
+			font-size: 40px;
+			font-family: Tahoma;
+			font-weight: bold;
+
+		}
+		.clear{
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+		.login{
+			width:160px;
+			float: left;
+			line-height: 28px;
+			margin: 2px;
+			padding: 15px;
+			
+		}
+		.Logintxtbox{
+			width: 100%;
+			height: 25px;
+		}
+		.login_txt{
+			font-size: 11px;
+			color: #FFFFFF;
+			font-family: tahoma;
+		}
+		.forgot{
+			color: #afbdd4;
+			font-family: tahoma;
+			font-size: 12px;
+			font-weight: bold;
+
+		}
+		#btn_login{
+			background-color: #6d84b4;
+			color: white;
+			padding: 3px;
+			height: 25px;
+			font-family: tahoma;
+			border:solid 1px darkblue;
+			margin-top: 27px;
+		}
+		.conatiner{
+			background-color: #d8dfea;
+			width: 100%;
+			height: 100%;
+		}
+		.left{
+			width: 500px;
+			padding: 50px;
+			display: inline-block;
+		}
+		.right{
+			width: 600px;
+			padding:30px;
+			float:right;
+			display: inline-block;
+		}
+		.right h3{
+			font-size: 35px;
+			line-height: 40px;
+			font-family: tahoma;
+		}
+		.right h5{
+			font-family: tahoma;
+			font-size: 19px;
+		}
+		.right h4{
+			line-height: 40px;
+		}
+		.Lhead{
+			font-family: tahoma;
+		}
+		.signup{
+			width: 500px;
+		}
+		.SignUp{
+			padding: 5px;
+			margin-left: -2px;
+			margin-top: 18px;
+			font-weight: bold;
+			font-size: 17px;
+			font-family: tahoma;
+			border-radius: 5px;
+		}
+		#frst{
+			width: 48%;
+		}
+		#scnd{
+			width: 50%;
+		}
+		.combo{
+			padding: 4px;
+			border-radius: 5px;
+		}
+		.age{
+			color: darkblue;
+			font-size: 13px;
+		}
+		.Rfooter{
+			width: 360px;		
+		}
+		.agefont{
+			width: 150px;
+			line-height: 13px;
+			float: right;	
+		}
+		.gender{
+			line-height: 40px;
+			padding: 3px 20px;
+		}
+		span{
+			color: darkblue;
+		}
+		.sign{
+
+			font-size: 13px;
+			color: grey;
+			line-height: 15px;
+		}
+		.para{
+			padding: 10px;
+		}
+		.create{
+			width:205px;
+		}
+		.clear1{
+			height: 30px;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="clear"></div>
+			<div class="logo">
+				<h2 id="logo_title">facebook</h2>
+			</div>
+			<div class="login">
+					<h1 class="login_txt">Email or Phone</h1>
+					<input type="text" class="Logintxtbox">
+			</div>
+			<div class="login">
+					<h1 class="login_txt">Password</h1>
+					<input type="password" class="Logintxtbox">
+					<font class="forgot">Forgotten account?</font>
+			</div>
+			<div class="login">
+				<input type="button" value="Log In" id="btn_login">
+			</div>
+		</div>
+		
+		<div class="conatiner">
+			<div class="left">
+				<h3 class="Lhead">Facebook helps you connect and share with the people in your life.</h3>
+				<img src="images/connect.png">
+			</div>
+			<div class="right">
+				<h3>Create an account</h3>
+				<h5>It's free and always will be.</h5>
+			
+				<div class="signup">
+					<input type="text" placeholder="First name" class="SignUp" id="frst">
+					<input type="text" placeholder="Surname" class="SignUp" id="scnd">
+					<input type="text" placeholder="Mobile number or email address" class="SignUp">
+					<input type="text" placeholder="New password" class="SignUp">
+				</div>
+				<h4>Birthday</h4>
+				<div class="Rfooter">
+					<select class="combo"><option selected>Day</option><option>01</option><option>02</option><option>03</option><option>04</option>
+					</select>
+					<select class="combo"><option selected>Month</option><option>01</option><option>02</option><option>03</option><option>04</option>
+					</select>
+					<select class="combo"><option selected>Year</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option>
+					</select>
+					<div class="agefont">
+						<font class="age">Why do i need to provide my date of birth?</font>
+					</div>
+					<div class="gender">
+						<input type="radio" name="gender">&nbsp;Female&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="gender">&nbsp;Male
+					</div>
+					<div class="para">
+						<p class="sign">By clicking Create an account,you agree to our <span>Terms</span> and that you had read our <span>Data Policy,including our Cookie Use Policy.</span> You may recive SMS messages notifications from Facebook and can opt out at any time.</p>
+					</div>
+					<div class="create">
+						<img src="images/signup.png">
+					</div>
+					
+				</div>
+				<div class="clear1"></div>
+				<p class="sign"><span>Create a page</span> for celebrity,band or business.</p>
+		</div>
+		</div>
+	</body>
+</html>
