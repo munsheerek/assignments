@@ -1,18 +1,19 @@
 <html>
 <head>
 	<script>
-		var num=10;
-		do{
-			
-			
-				var m=setInterval(timer,300);
-			function timer(){
-				document.write(num+" ");
-
-				
-				num--;
+	
+	do{
+		var num=9;
+		var m=setInterval(timer,500);
+		function timer(){
+			document.write(num+" ");
+			num--;
+			if(num<-1){
+				clearInterval(m);
+				alert("Time Expires!!");
 			}
-		}while(num>0)
+		}
+		}while (num>=0)
 		
 			
 		
