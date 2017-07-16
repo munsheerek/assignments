@@ -1,0 +1,47 @@
+<html>
+<head>
+	<script>
+	function valid(){
+		var p=document.getElementById("label");
+		var Female=document.getElementById("female").checked;
+		var Male=document.getElementById("male").checked;
+		if(Male == false && Female == false)
+		{
+			p.innerHTML="Please choose your gender";
+		}
+	}
+
+
+	</script>
+
+	<style>
+		form{
+			width:500px;
+			text-align: center;
+			height: 150px;
+			padding: 60px;
+			background-color: skyblue;
+		}
+		.body{
+			margin: 10px;
+			height: 50px;
+			width:250px;
+		}
+		#label{
+			color:red;
+		}
+	</style>
+</head>
+	
+	<body class="body">
+		<form action="" method="get">
+			
+			<h2>Radio Button Validation</h2>
+
+			Gender : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="male" name="gender" id="male">Male
+					<input type="radio" value="female" name="gender" id="female">Female<br><br>
+			<p id="label"></p>
+			<input type="button" value="Submit" id="btn" onClick="valid();">
+		</form>
+	</body>
+</html>
