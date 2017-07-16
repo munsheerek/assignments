@@ -1,0 +1,47 @@
+<html>
+<head>
+	<script>
+	function valid(){
+		var p=document.getElementById("label");
+		var ug=document.getElementById("ug").checked;
+		var pg=document.getElementById("pg").checked;
+		if(ug == false && pg == false)
+		{
+			p.innerHTML="Please choose your qualification";
+		}
+	}
+
+
+	</script>
+
+	<style>
+		form{
+			width:500px;
+			text-align: center;
+			height: 150px;
+			padding: 60px;
+			background-color: skyblue;
+		}
+		.body{
+			margin: 10px;
+			height: 50px;
+			width:250px;
+		}
+		#label{
+			color:red;
+		}
+	</style>
+</head>
+	
+	<body class="body">
+		<form action="" method="get">
+			
+			<h2>Check Box Validation</h2>
+
+			Qualification : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value="ug" name="chk_quali" id="ug">Graduate
+					<input type="checkbox" value="pg" name="chk_quali" id="pg">Post Graduate<br><br>
+			<p id="label"></p>
+			<input type="button" value="Submit" id="btn" onClick="valid();">
+		</form>
+	</body>
+</html>
