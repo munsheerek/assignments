@@ -1,239 +1,174 @@
+
 <html>
-
-<head>
-
-
-<title>My Website Template</title>
-
-
-<style>
-	*{
-		padding: 0px;
+	<head>
+		<title>Artifice</title>
+		<style>
+		*
+	{
 		margin: 0px;
-	}
-	.container{
-		width:1100px;
-		margin: 0px auto;
-		background-color: yellow;
-	}
-	.clear{
-		clear: both;
-	}
-	h1{
-		padding:25px;
-		width:400px;
-		float: left;
-	}
-	.top2nav{
-			
-		float: left;
-		width: 500px;
-	}
-	.top_nav ul li a{
-		text-decoration: none;
-	}
-	.top_nav ul li{
-		float: left;
-		padding: 40px 10px;
+		padding: 0px;
 		list-style-type: none;
 	}
-	.logo,nav,.right,.left,.middle{
+body
+	{
+		background-color: #000000;	
+	}	
+#container
+	{
+		background-color: #000000;
+		color: white;
+		border:1px solid black;
+		width:1000px;
+		margin:0px auto;
+	}
+header,nav,article,section,footer,aside
+	{
+		display: block;
+	}	
+.top_header
+	{
+		margin-top: 20px;
+	}	
+#main_header
+	{
+		width: 300px;
+		float: left;
+	}	
+nav ul li
+	{
+		margin: 10px;
 		display: inline-block;
 	}
-	.banner{
-		margin: 1px;
-	}
-	.banner img{
-		width: 100%;
-		height: 140px;
-
-	}
-	
-	.left_top{
-		width: 300px;
-		height: 220px;
-		padding: 20px;
-		border: solid green 3px;
-	}
-	.left_bottom_l{
-		width:100px;
-		height: 220px;
+#main_img
+	{
+		width: 998px;
+		margin: 40px 0px;
+	}	
+section
+	{
+		width: 378px;
 		float: left;
-		padding: 20px;
-		border: solid blue 3px;
-	}
-	.left_bottom_r{
-		width:140px;
-		height: 220px;
-		float: left;
-		padding: 20px;
-		border: solid black 3px;
-	}
-	.left_bottom_l p{
-		float: left;
-	}
-	.head{
-		font-size: 15px;
-	}
-	.left_bottom_l img{
-		float: left;
-		width: 40px;
-	}
-	.left_bottom_r img{
-		width: 150px;
-	
-	}
-	p{
-		line-height: 20px;
-		font-size: 13px;
+	}	
+h3
+	{
 		padding: 5px;
-	}
-	span{
+	}	
+p
+	{
+		font-size: 13px;
+	}	
+span
+	{
+		font-weight: bold;
 		text-decoration: underline;
-		font-weight: bold;
-	}
-	#para_head{
-		font-weight: bold;
-	}
+	}	
+#p_3
+	{
+		float: right;
+		margin-right: 6px;
+	}	
 	
+#a_1
+	{
+		width: 175px;
+		float: left;
 	}
-	.cl{
-		height:220px;
-		width: 200px;
-	
+#a_2
+	{
+		width: 175px;
+		float: left;
 	}
-	.left{
-		margin: 10px;
-		width: 350px;
+#aside_1
+	{
+		width: 310;
 		float: left;
 
-		border: solid red 3px;
 	}
-	.middle{
-		width:200px;
-		padding: 20px;
-		margin: 10px;
+#aside_2
+	{
+		width:310px;
 		float: left;
-		border: solid green 3px;
-	}
-	.middle_heading,.middle_para,.right_heading,.right_bottom{
-		border: solid red 3px;
+	}			
 
-	}
-	.right{
-		width: 300px;
-		padding: 20px;
-		margin: 10px;
-		float: left;
-		clear: left;
-		border: solid black 3px;	
-	}
-
-</style>
-
-</head>
-
-
-<body>
-	<div class="container">
-		<header class="logo">
-			<h1>ARTIFICE</h1>
-			<nav class="top_nav">
-				<ul>
-					<li><a href="#">HOMEPAGE</a></li>
-					<li><a href="#">BLOG</a></li>
-					<li><a href="#">PHOTOS</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section>
-			<header>
-				<div class="banner">
-					<img src="images/pic1.jpg">
-				</div>
-				<div class="clear"></div>
-			</header>
-		</section>
-
-			<article class="body">
-					<div class="left">
-					<section class="left_top">
-						<h3 class="head">WELCOME TO ARTIFICE</h3>
-						<div class="cl"></div>
-						<p>This is <font id="para_head">Artifice</font> a free,fully standars-complaint CSS template by <span>TEMPLATED.</span> The images used in this template are from <span>PDPhoto.</span> This free template is released under the <span>Creative Commons Attribution</span> license,so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it.. Have fun :)</p>
-				
-					</section>
-
-
-					<section class="left_bottom_l">
-						<h3 class="head">SUSCIPIT SED PELLENTESQUE NASCETUR</h3>
-						<div class="cl"></div>
-						<img src="images/pic2.jpg">
-						<p class="para">Lacinia natoque faucibus fringilla egestas<br>.....................................</p>
-
-					</section>
-					
-
-					<section class="left_bottom_r">
-						<h3 class="head">PENATIBUS AMET SED CONSEQUAT ACCUMSAN</h3>
-						<div class="cl"></div>
-						<img src="images/pic4.jpg">
-
-					</section>
-				</div>
-				<div class="clear"></div>
-				<div class="middle">
-					<section class="middle_heading">
-						<h3 class="head">FRINGILLA PHARETRA QUIS</h3>
-						<div class="cl"></div>
-						<p>Phasellus condimentum quis nec suscipt vel phasellus rutrum. Tincidunt posuere eu integer risus magna lorem ipsum veroeros.</p>
-						<div class="cl"></div>
-					</section>
-					<section class="middle_para">
-
-						<h3 class="head">VOLUPAT CONDIMENTUM AUCTOR DOLORE</h3>
-						<div class="cl"></div>
-						<p>Sapien ullamcorper mus penatibus viverra curae arat consectetur. Scelerisque eleifend quis ullamcorper ante laoreet scelerisque.</p>
-						<div class="cl"></div>
-						<p><span>Quis pellentesque orci cras</span><br>
-							......................................<br>
-							<span>Fringilla laoreet ultrices rhoncus</span><br>
-							.......................................</p>
-
-					</section>
-				</div>
-				<div class="clear"></div>
-				<div class="right">
-					<section class="right_heading">
-						
-							<h3 class="head">VOLUTPAT CONDIMENTUM AUCTOR MAGNA</h3>
-							<div class="cl"></div>
-							<p>Rhoncus et dui dignissim elementum. Vivamus lorem eu nist phasellus lorem dolore.</p>
-							<div class="cl"></div>
-							<p><span>Mollis ornare arcu suscript</span><br>....................................<br><span>Accusman quam ante</span><br>....................................<br><span>Volutpat odio neque posuere</span><br>..........................................................<br><span>Volutpat urna tristique quisque</span></p>
-					</section>
-						<section class="right_bottom">
-							<h3 class="head">CUBILIA TURPIS</h3>
-							<p><span>Libero duis ultrices</span><p>
-						</section>
-				</div>
-				<div class="clear"></div>
-			</article>
+footer
+	{
+		font-size: 13px;
+	}	
+		</style>
+	</head>
+	<body>
+		<div id="container">
 			
-		</section>
-	</div>
+			<header class="top_header">
+				<h1 id="main_header">ARTIFICE</h1>
+				<nav>
+					<ul>
+						<li>HOMEPAGE</li>
+						<li>BLOG</li>
+						<li>PHOTOS</li>
+						<li>ABOUT</li>
+						<li>CONTACT</li>
+					</ul>
+				</nav>
+			</header>
+			<div>
+				<img id="main_img" src="images/pic1.jpg">
+			</div>	
+			<section>
+				<article >
+					<header>
+						<h2>WELCOME TO ARTIFICE</h2>
+					</header>
+					<p>This is <span id="span_1">Artifice,</span> a fully standards-compliance CSS template by <span>TEMPLATED.</span> The images used in this template are from <span>PDPhoto.</span> This free template is released under the <span>Creative Commons Attribution</span> license, so you are pretty much free to do whatever you want with it(even use it commrcially) provided you give us credit for it.. Have fun:) 
+					</p>	
+				</article>
+				<article id="a_1">
+					<header>
+						<h3>SUSCIPIT SED PELLENTESQUE NASCETUR</h3>
+					</header>
+					<img src="images/pic2.jpg">
+					<div id="p_3">
+						<ul>
+						<li><P>Lacinia natDQue</P></li>
+						<li><p>feucibus fringilla</p></li>
+						<li><p>egestri</p></li>
+						</ul>
+					</div>
+				</article>
+				<article id="a_2">
+					<header>
+						<h3>PENATIUS AMET SED CONSEQUAT ACCUMSAN</h3>
+					</header>
+					<img src="images/pic4.jpg">
+				</article>
+			</section>
+			<aside id="aside_1">
+				<h3>FRINGILLA PHARETRA QUIS</h3>
+				<p>Phasellus condimentum Quim suscripit vel phasellus rutrum. Tircidunt posuere eu integer risus magna lorem ipsum vergeros.</p>
+				<h3>VOLUPAT CONDIMENTUM AUCTOR DOLORE</h3>
+				<p>Sapen ullamcorper mus penabibus viverra curae erat consectur. Scelerisque</p>
+				<p><span>Quis pellentesque ord CEBS</span></p>
+				<hr>
+				<footer>
+					<span>Fringgilla Laprept ullrises shoscus</span>
+					<hr>
+				</footer>
+			</aside>
+
+			<aside id="aside_2">
+				<h3>VOLUTPAT CONDIMENTUM AUCTOR MAGNA</h3>
+				<p>Rhoncus dus digrissum elemntum. Vivamus lorum eu risl phasellus lorem dolore.</p>
+				<p><span>Mollis orhure arru subscript</span></p>
+				<hr>
+				<p><span>Acrumam quam arte</span></p>
+				<hr>
+				<p><span>Volutpqt odo seque posquoue</span></p>
+				<hr>
+				<p><span>Volvpqt urna tristique quisque</span></p>
+				<h3>CUBILIA TURPIS</h3>
+				<p>Ubero duts ultrices</p>
+			</aside>	
+		</div>
 
 
-</body>
-
-
-
-
-
-
-
-
-
-</html>
+	</body>
